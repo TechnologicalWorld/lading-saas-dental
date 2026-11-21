@@ -1,0 +1,6 @@
+import { ImageResponse } from "next/og";
+import { siteConfig } from "@/config/site";
+export const alt = `${siteConfig.name}, software para clínicas odontológicas`;
+export const size = { width: 1200, height: 630 };
+export const contentType = "image/png";
+export default function OpenGraphImage() { return new ImageResponse(<div style={{ width: "100%", height: "100%", display: "flex", alignItems: "center", padding: "72px", color: "#0f172a", background: "linear-gradient(135deg, #f0fdfa 0%, #ffffff 55%, #ecfeff 100%)", fontFamily: "sans-serif" }}><div style={{ display: "flex", flexDirection: "column", maxWidth: 930 }}><div style={{ display: "flex", alignItems: "center", gap: 18, color: "#0f766e", fontSize: 34, fontWeight: 800 }}><div style={{ width: 50, height: 50, borderRadius: 15, background: "#0d9488", color: "white", display: "flex", alignItems: "center", justifyContent: "center" }}>D</div>{siteConfig.name}</div><div style={{ marginTop: 48, fontSize: 68, lineHeight: 1.06, letterSpacing: "-3px", fontWeight: 800 }}>Todo lo que tu clínica dental necesita, en un solo lugar.</div><div style={{ marginTop: 34, fontSize: 26, lineHeight: 1.4, color: "#475569" }}>Citas, pacientes, historias clínicas, tratamientos y pagos en una plataforma.</div></div></div>, size); }
