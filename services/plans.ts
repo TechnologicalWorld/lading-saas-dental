@@ -31,7 +31,6 @@ export async function getPlans(): Promise<PlansResult> {
   try {
     const response = await fetch(`${API_URL}/api/v1/planes`, {
       signal: AbortSignal.timeout(3500),
-      next: { revalidate: 300 },
       headers: { Accept: "application/json" },
     });
 

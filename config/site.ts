@@ -1,18 +1,25 @@
+const appUrl = (
+  process.env.NEXT_PUBLIC_APP_URL ??
+  "https://saas.dental.technologicalworldbolivia.com"
+).replace(/\/$/, "");
+
 export const siteConfig = {
-  name: "Dentia",
+  name: "SaaS Dental",
   description:
     "Gestiona citas, pacientes, historias clínicas, odontogramas, tratamientos, pagos y sucursales desde una sola plataforma odontológica.",
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000",
+  url: process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:31000",
+  appUrl,
   currency: "BOB",
   currencySymbol: "Bs",
   locale: "es-BO",
+  whatsappNumber: "59177793901",
   popularPlan: "Profesional",
   routes: {
     home: "/",
-    login: "/login",
-    register: "/register",
+    login: `${appUrl}/login`,
     pricing: "/#planes",
     contact: "/contacto",
+    whatsapp: "https://wa.me/59177793901",
     privacy: "/privacidad",
     terms: "/terminos",
   },
@@ -23,5 +30,4 @@ export const navigation = [
   { label: "Funciones", href: "/#funciones" },
   { label: "Cómo funciona", href: "/#como-funciona" },
   { label: "Planes", href: "/#planes" },
-  { label: "Preguntas frecuentes", href: "/#preguntas" },
 ] as const;

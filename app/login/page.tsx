@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { PublicPageShell } from "@/components/public-page-shell";
-import { PublicForm } from "@/components/public-form";
+import { ExternalRedirect } from "@/components/external-redirect";
+import { siteConfig } from "@/config/site";
 
-export const metadata: Metadata = { title: "Iniciar sesión | Dentia", description: "Accede a tu cuenta de Dentia.", robots: { index: false, follow: false } };
+export const metadata: Metadata = { title: "Iniciar sesión | SaaS Dental", robots: { index: false, follow: false } };
 
 export default function LoginPage() {
-  return <PublicPageShell narrow eyebrow="Acceso a la plataforma" title="Bienvenido de nuevo" description="Ingresa tus datos para acceder a la gestión de tu clínica."><div className="mx-auto max-w-lg"><PublicForm type="login" /></div></PublicPageShell>;
+  return <ExternalRedirect href={siteConfig.routes.login} action="iniciar sesión" />;
 }

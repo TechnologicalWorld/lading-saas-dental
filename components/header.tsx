@@ -13,7 +13,7 @@ export function Header() {
         </nav>
         <div className="hidden items-center gap-2 lg:flex">
           <Link href={siteConfig.routes.login} className="button-base text-slate-700 hover:bg-slate-100">Iniciar sesión</Link>
-          <Link href={siteConfig.routes.register} className="button-base bg-teal-600 text-white hover:bg-teal-700">Prueba gratis</Link>
+          <Link href={siteConfig.routes.contact} className="button-base bg-teal-600 text-white hover:bg-teal-700">Solicitar demo</Link>
         </div>
         <MobileNavigation />
       </Container>

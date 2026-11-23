@@ -1,5 +1,5 @@
 import type { ReactElement } from "react";
-import { CalendarDays, ChevronDown, Clock3, MoreHorizontal, UsersRound } from "lucide-react";
+import { CalendarDays, ChevronDown, MoreHorizontal, UsersRound } from "lucide-react";
 
 const chart = [42, 64, 52, 78, 60, 87, 70];
 const appointments = [
@@ -46,7 +46,6 @@ export function DashboardPreview() {
           </div>
         </div>
       </div>
-      <div className="absolute -bottom-5 -left-3 hidden items-center gap-3 rounded-xl border border-slate-200 bg-white p-3 shadow-lg sm:flex"><span className="grid size-9 place-items-center rounded-lg bg-emerald-50 text-emerald-600"><Clock3 className="size-4" /></span><div><p className="text-[10px] text-slate-500">Jornada organizada</p><p className="text-xs font-bold text-slate-900">Sin cruces de horario</p></div></div>
     </div>
   );
 }

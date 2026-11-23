@@ -2,9 +2,12 @@
   "name": "tesis-dental-lading",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": ">=20.9.0"
+  },
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "tsc --noEmit -p tsconfig.build.json && next build --webpack",
     "start": "next start",
     "lint": "eslint"
   },

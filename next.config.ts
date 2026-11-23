@@ -1,12 +1,16 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  output: "export",
+  trailingSlash: true,
+  // TypeScript is checked explicitly in the build script before compiling.
+  typescript: {
+    ignoreBuildErrors: true,
+  },
   experimental: {
     agentFeedback: true,
+    useTypeScriptCli: false,
   },
-  cacheComponents: true,
-  partialPrefetching: true,
 };
 
 export default nextConfig;

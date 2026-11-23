@@ -1,6 +1,7 @@
 import type { ReactNode } from "react";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+import { siteConfig } from "@/config/site";
 
 export function Container({ children, className = "" }: { children: ReactNode; className?: string }) {
   return <div className={`mx-auto w-full max-w-7xl px-5 sm:px-6 lg:px-8 ${className}`}>{children}</div>;
@@ -8,12 +9,12 @@ export function Container({ children, className = "" }: { children: ReactNode; c
 
 export function Logo({ light = false }: { light?: boolean }) {
   return (
-    <Link href="/" className="group inline-flex items-center gap-2.5 rounded-md focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-teal-500" aria-label="Dentia, inicio">
+    <Link href="/" className="group inline-flex items-center gap-2.5 rounded-md focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-teal-500" aria-label={`${siteConfig.name}, inicio`}>
       <span className="relative grid size-9 place-items-center rounded-xl bg-teal-600 text-white shadow-sm shadow-teal-900/15">
         <span className="absolute size-3.5 rounded-full border-[3px] border-white" />
         <span className="absolute bottom-1.5 h-2.5 w-1 rounded-full bg-white" />
       </span>
-      <span className={`text-xl font-bold tracking-tight ${light ? "text-white" : "text-slate-950"}`}>Dentia</span>
+      <span className={`text-xl font-bold tracking-tight ${light ? "text-white" : "text-slate-950"}`}>{siteConfig.name}</span>
     </Link>
   );
 }

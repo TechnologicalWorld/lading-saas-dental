@@ -3,21 +3,6 @@ import type { Plan } from "@/types/plan";
 // Datos demostrativos: reemplazados automáticamente cuando la API responde.
 export const fallbackPlans: Plan[] = [
   {
-    id: "free",
-    nombre: "Gratuito",
-    descripcion: "Para organizar los primeros pasos de tu consultorio.",
-    precioMensual: 0,
-    moneda: "BOB",
-    simboloMoneda: "Bs",
-    limiteUsuarios: 1,
-    limiteSucursales: 1,
-    caracteristicas: [
-      { nombre: "Agenda y citas" },
-      { nombre: "Registro de pacientes" },
-      { nombre: "Acceso a funciones esenciales" },
-    ],
-  },
-  {
     id: "basic",
     nombre: "Básico",
     descripcion: "Para consultorios que necesitan ordenar su operación diaria.",
@@ -27,7 +12,7 @@ export const fallbackPlans: Plan[] = [
     limiteUsuarios: 3,
     limiteSucursales: 1,
     caracteristicas: [
-      { nombre: "Todo lo del plan Gratuito" },
+      { nombre: "Agenda, pacientes y funciones esenciales" },
       { nombre: "Historias clínicas digitales" },
       { nombre: "Odontograma y tratamientos" },
       { nombre: "Seguimiento de pagos" },
@@ -64,17 +49,5 @@ export const fallbackPlans: Plan[] = [
       { nombre: "Configuración adaptada a tu operación" },
       { nombre: "Acompañamiento prioritario" },
     ],
-  },
-  {
-    id: "trial",
-    nombre: "Prueba 14 días",
-    descripcion: "Explora la plataforma antes de elegir un plan.",
-    precioMensual: 0,
-    moneda: "BOB",
-    simboloMoneda: "Bs",
-    limiteUsuarios: 999999,
-    limiteSucursales: 999999,
-    caracteristicas: [{ nombre: "Sin tarjeta y sin compromiso" }],
-    esPrueba: true,
   },
 ];

@@ -15,7 +15,7 @@ button, a, summary { -webkit-tap-highlight-color: transparent; }
 .mock-button > svg { width: .75rem; height: .75rem; }
 .feature-card { transition: transform .25s ease, border-color .25s ease, box-shadow .25s ease; }
 .feature-card:hover { transform: translateY(-3px); border-color: #99f6e4; box-shadow: 0 15px 35px -28px rgb(15 23 42 / .35); }
-.hero-grid { background-image: linear-gradient(to right, rgb(226 232 240 / .45) 1px, transparent 1px), linear-gradient(to bottom, rgb(226 232 240 / .45) 1px, transparent 1px), radial-gradient(circle at 82% 30%, rgb(204 251 241 / .8), transparent 34%); background-size: 56px 56px, 56px 56px, 100% 100%; mask-image: linear-gradient(to bottom, black 80%, transparent 100%); }
+.hero-grid { background: linear-gradient(180deg, #fff 0%, #f8fafc 100%); }
 .cta-pattern { background-image: radial-gradient(circle at 15% 20%, rgb(255 255 255 / .15), transparent 25%), radial-gradient(circle at 90% 80%, rgb(8 47 73 / .22), transparent 28%); }
 .skip-link { position: fixed; left: 1rem; top: -5rem; z-index: 100; border-radius: .5rem; background: #0f172a; padding: .75rem 1rem; color: white; font-weight: 700; }
 .skip-link:focus { top: 1rem; }

@@ -14,8 +14,8 @@ const columns = [
   {
     title: "Ayuda",
     links: [
-      ["Preguntas frecuentes", "/#preguntas"],
       ["Contacto", siteConfig.routes.contact],
+      ["WhatsApp", siteConfig.routes.whatsapp],
       ["Iniciar sesión", siteConfig.routes.login],
     ],
   },
@@ -24,7 +24,6 @@ const columns = [
     links: [
       ["Privacidad", siteConfig.routes.privacy],
       ["Términos", siteConfig.routes.terms],
-      ["Crear cuenta", siteConfig.routes.register],
     ],
   },
 ];
@@ -63,7 +62,7 @@ export function Footer() {
         </div>
         <div className="flex flex-col gap-2 pt-7 text-xs text-slate-500 sm:flex-row sm:items-center sm:justify-between">
           <p>
-            © {CURRENT_YEAR} Dentia. Todos los derechos reservados.
+            © {CURRENT_YEAR} {siteConfig.name}. Todos los derechos reservados.
           </p>
           <p>Hecho para equipos odontológicos de Bolivia.</p>
         </div>

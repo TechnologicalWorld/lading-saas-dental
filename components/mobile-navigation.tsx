@@ -19,7 +19,7 @@ export function MobileNavigation() {
           </nav>
           <div className="mt-3 grid grid-cols-2 gap-2 border-t border-slate-100 pt-4">
             <Link href={siteConfig.routes.login} className="button-base border border-slate-200 text-slate-800">Iniciar sesión</Link>
-            <Link href={siteConfig.routes.register} className="button-base bg-teal-600 text-white">Prueba gratis</Link>
+            <Link href={siteConfig.routes.contact} onClick={() => setOpen(false)} className="button-base bg-teal-600 text-white">Solicitar demo</Link>
           </div>
         </div>
       )}
