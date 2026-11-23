@@ -1,4 +1,4 @@
-:HL["/lading-saas-dental/_next/static/css/2e44ebef534f9287.css","style"]
+:HL["/_next/static/css/81eff5caf5f9159a.css","style"]
 2:[["children",{"s":"__PAGE__","h":160}]]
 1:[["children",{"s":"login","h":96,"c":"$Q2"}]]
-0:{"b":"RiKrDOHRprKTAVHIUrFHh","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
+0:{"b":"4b-jj5bYH03rCMp6KZR0Z","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
