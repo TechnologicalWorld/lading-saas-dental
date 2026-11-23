@@ -36,7 +36,7 @@ export function FeaturesGrid() {
             <button type="button" onClick={() => move(1)} className="grid size-11 place-items-center rounded-full bg-slate-950 text-white hover:bg-teal-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-600" aria-label="Ver más funciones"><ArrowRight className="size-4" /></button>
           </div>
         </div>
-        <div ref={trackRef} className="mt-10 flex snap-x snap-mandatory gap-4 overflow-x-auto pb-5 [scrollbar-width:thin] [scrollbar-color:#94a3b8_transparent]" aria-label="Funciones de SaaS Dental">
+        <div ref={trackRef} className="mt-10 flex snap-x snap-mandatory gap-4 overflow-x-auto pb-5 [scrollbar-width:thin] [scrollbar-color:#94a3b8_transparent]" aria-label="Funciones de SaaS Odontológico">
           {features.map(({ icon: Icon, title, text }) => <article key={title} className="feature-card min-w-[86%] snap-start rounded-2xl border border-slate-200 bg-white p-6 sm:min-w-[47%] lg:min-w-[31%]"><span className="grid size-11 place-items-center rounded-xl bg-teal-50 text-teal-700"><Icon className="size-5" /></span><h3 className="mt-5 text-lg font-bold text-slate-900">{title}</h3><p className="mt-2 max-w-lg text-sm leading-6 text-slate-600">{text}</p></article>)}
         </div>
       </Container>

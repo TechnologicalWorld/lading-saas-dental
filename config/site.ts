@@ -4,7 +4,7 @@ const appUrl = (
 ).replace(/\/$/, "");
 
 export const siteConfig = {
-  name: "SaaS Dental",
+  name: "SaaS Odontológico",
   description:
     "Gestiona citas, pacientes, historias clínicas, odontogramas, tratamientos, pagos y sucursales desde una sola plataforma odontológica.",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:31000",

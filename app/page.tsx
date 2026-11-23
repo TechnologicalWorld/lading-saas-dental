@@ -1,7 +1,6 @@
 import { Header } from "@/components/header";
 import { Hero } from "@/components/hero";
 import { FeaturesGrid } from "@/components/features-grid";
-import { FeatureShowcase } from "@/components/feature-showcase";
 import { HowItWorks } from "@/components/how-it-works";
 import { PricingSection } from "@/components/pricing-section";
 import { RoleBenefits } from "@/components/role-benefits";
@@ -38,7 +37,6 @@ export default function Home() {
       <main id="contenido">
         <Hero />
         <FeaturesGrid />
-        <FeatureShowcase />
         <HowItWorks />
         <PricingSection />
         <RoleBenefits />

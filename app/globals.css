@@ -20,6 +20,7 @@ button, a, summary { -webkit-tap-highlight-color: transparent; }
 .skip-link { position: fixed; left: 1rem; top: -5rem; z-index: 100; border-radius: .5rem; background: #0f172a; padding: .75rem 1rem; color: white; font-weight: 700; }
 .skip-link:focus { top: 1rem; }
 .field-control { width: 100%; min-height: 2.9rem; border: 1px solid #cbd5e1; border-radius: .75rem; background: white; padding: .75rem .9rem; color: #0f172a; font-size: .875rem; outline: none; transition: border-color .2s, box-shadow .2s; }
+.field-control.field-with-icon { padding-left: 2.75rem; }
 .field-control:focus { border-color: #0d9488; box-shadow: 0 0 0 3px rgb(13 148 136 / .12); }
 .field-control::placeholder { color: #94a3b8; }
 @media (min-width: 640px) { .section-space { padding-block: 7rem; } }

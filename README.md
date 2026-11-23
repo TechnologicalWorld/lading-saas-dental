@@ -1,4 +1,4 @@
-# SaaS Dental — landing SaaS odontológica
+# SaaS Odontológico — landing SaaS odontológica
 
 Landing comercial responsive para una plataforma de gestión de clínicas dentales. Construida con Next.js 16 (App Router), TypeScript, Tailwind CSS 4 y Lucide React.
 
@@ -46,7 +46,7 @@ types/plan.ts         contratos TypeScript
 
 ## Personalización pendiente
 
-- Nombre y URL del producto en `config/site.ts` (actualmente “SaaS Dental”).
+- Nombre y URL del producto en `config/site.ts` (actualmente “SaaS Odontológico”).
 - Nombre del plan popular en `config/site.ts`.
 - URL pública y URL de la API en las variables de entorno.
 - Condiciones comerciales y contractuales definitivas.
