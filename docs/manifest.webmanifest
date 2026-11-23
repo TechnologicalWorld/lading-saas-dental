@@ -1,0 +1,10 @@
+{
+  "name": "SaaS Dental | Software odontológico",
+  "short_name": "SaaS Dental",
+  "description": "Gestión integral para clínicas y consultorios odontológicos.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0f766e",
+  "lang": "es-BO"
+}
