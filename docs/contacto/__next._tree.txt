@@ -1,4 +1,4 @@
-:HL["/lading-saas-dental/_next/static/css/3e296f16e926e8c8.css","style"]
+:HL["/_next/static/css/8a2d1362a769a67f.css","style"]
 2:[["children",{"s":"__PAGE__","h":160}]]
 1:[["children",{"s":"contacto","h":96,"c":"$Q2"}]]
-0:{"b":"PEFmJl5GZ2zozCyTFI_Cz","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
+0:{"b":"C6hUdlCp7CQ7gylj86i1G","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
