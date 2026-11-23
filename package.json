@@ -8,6 +8,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "tsc --noEmit -p tsconfig.build.json && next build --webpack",
+    "export:docs": "npm run build && rm -rf docs && mv out docs",
     "start": "next start",
     "lint": "eslint"
   },
